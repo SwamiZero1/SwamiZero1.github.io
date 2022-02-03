@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+
+    height: 100vh;
+    background-image: url(input/604.jpg);
+    width: 100%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex; 
+}
+.logo{
+    cursor: pointer;
+    width: 140px;
+
+}
+
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+
+}
+.navbar ul li a{
+    font-size: 15px;
+    color: rgb(201, 6, 240);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: none;
+letter-spacing: 0.5px;
+position: relative;
+padding: 0 3px;
+font-weight: bolder;
+}
+.navbar ul li a:after{
+
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 0, 191);
+    height: 3px;
+    width: 100%;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    color:rgb(118, 80, 255);
+}
+.navbar ul li a:hover::after{
+    width: 150%;
+     
+}
+.content{
+
+    width: 100%;
+    top: 30%;
+    position: absolute;
+}
+.Left-col{
+margin-left: 6%;
+    text-size-adjust: 12px;
+    font-size: 15px;
+    color: rgb(243, 165, 239);
+
+}
+.Left-col h1{
+    
+    font-size: 90px;
+    outline: none;
+    text-transform: uppercase;
+    float: left;
+    height: 3px;
+transition: 0s;
+animation: animate 15s linear infinite;
+-webkit-box-reflect: below 1px linear-gradient(transparent,#fff);
+}
+@keyframes animate{
+    0%{
+        color:rgb(241, 32, 147);
+        text-shadow: none;
+    }
+    100%{
+color: rgb(230, 23, 178);
+text-shadow: 0 0 10px rgb(218, 16, 236),
+0 0 20px rgb(210, 16, 236),
+0 0 40px rgb(218, 16, 236),
+0 0 80px rgb(236, 16, 218),
+0 0 160px rgb(236, 16, 152);
+
+    } 
+    
+}
+
+.Right-col{
+    float: right;
+    margin-right:6%  ;
+   
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.Right-col h1{
+    font-size: 28px;
+    color: aliceblue;
+    font-weight: 400;
+margin-right: 15px;
+}
+#icon{
+    cursor: pointer;
+    width: 80px;
+}
+.form{
+    font-family: fantasy;
+    display: grid;
+  
+    justify-content: right;
+    position:relative ;
+
+}
