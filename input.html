@@ -12,7 +12,7 @@
     <div class="container">
 
          <div class="navbar">
-             <img src="input/logo.png" class="Logo" alt="">
+             <img src="logo.png" class="Logo" alt="">
              <ul>
                  <li><a href="#">HOME</a></li>
                  <li><a href="#">SPECIAL</a></li>
@@ -30,13 +30,13 @@
             </div>
              <div class="Right-col">
 <h1>KaBoom!</h1>
-<img src="input/play.png" alt="PLAY" id="icon">
+<img src="play.png" alt="PLAY" id="icon">
              </div>
              
          </div>
     </div>
     <audio id="mySong">
-        <source src="input/GLEE - Stereo Hearts (Full Performance) HD.mp3" type="audio/mp3">
+        <source src="GLEE - Stereo Hearts (Full Performance) HD.mp3" type="audio/mp3">
     </audio>
 
     <script>
@@ -47,11 +47,11 @@ var icon = document.getElementById("icon");
 icon.onclick = function(){
     if(mySong.paused){
         mySong.play();
-        icon.src="input/pause.png";
+        icon.src="pause.png";
     } 
     else{
         mySong.pause();
-        icon.src="input/play.png";
+        icon.src="play.png";
     }
 }
     </script>
