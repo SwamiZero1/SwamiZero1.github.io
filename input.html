@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>Input Data</title>
+</head>
+<body>
+   
+    <div class="container">
+
+         <div class="navbar">
+             <img src="input/logo.png" class="Logo" alt="">
+             <ul>
+                 <li><a href="#">HOME</a></li>
+                 <li><a href="#">SPECIAL</a></li>
+                 <li><a href="#">REGISTER</a></li>
+                 <li><a href="#">CONTACT</a></li>
+                 <li><a href="#">ABOUT</a></li>
+                 
+             </ul>
+         </div>
+         <div class="content">
+            <div class="Left-col"> 
+                
+                <h1>THE<br>REAL<br>BOOM </h1>
+
+            </div>
+             <div class="Right-col">
+<h1>KaBoom!</h1>
+<img src="input/play.png" alt="PLAY" id="icon">
+             </div>
+             
+         </div>
+    </div>
+    <audio id="mySong">
+        <source src="input/GLEE - Stereo Hearts (Full Performance) HD.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+var mySong = document.getElementById("mySong");
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    if(mySong.paused){
+        mySong.play();
+        icon.src="input/pause.png";
+    } 
+    else{
+        mySong.pause();
+        icon.src="input/play.png";
+    }
+}
+    </script>
+</body>
+</html>
